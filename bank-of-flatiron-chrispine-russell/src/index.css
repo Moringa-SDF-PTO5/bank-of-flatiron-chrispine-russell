@@ -1,0 +1,77 @@
+/* Reset default browser styles */
+body,
+html,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+form,
+fieldset,
+legend,
+blockquote,
+th,
+td,
+figure,
+figcaption,
+button,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Set box-sizing to border-box for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}

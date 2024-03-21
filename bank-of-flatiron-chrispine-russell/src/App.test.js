@@ -5,7 +5,7 @@ import App from './App';
 describe('App Component', () => {
   test('renders the heading', () => {
     render(<App />);
-    const headingElement = screen.getByText(/Bank of Flatiron/i);
+    const headingElement = screen.getByText(/Bank-of-Flatiron-chrispine-russell/i);
     expect(headingElement).toBeInTheDocument();
   });
 

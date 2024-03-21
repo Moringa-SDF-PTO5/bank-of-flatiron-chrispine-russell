@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import TransactionTable from './TransactionTable';
-import TransactionForm from './TransactionForm';
-import SearchBar from './SearchBar';
+import TransactionsTable from './components/TransactionsTable';
+import TransactionForm from './components/TransactionForm';
+import SearchBar from './components/searchBar';
 import './App.css'; // Importing the CSS file
 
 const App = () => {
   const [transactions, setTransactions] = useState([]);
   const [filteredTransactions, setFilteredTransactions] = useState([]);
+
 
   useEffect(() => {
     fetchTransactions();

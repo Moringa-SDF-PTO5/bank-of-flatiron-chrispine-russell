@@ -1,31 +1,4 @@
-/* Reset default browser styles */
-body,
-html,
-div,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-li,
-dl,
-dt,
-dd,
-form,
-fieldset,
-legend,
-blockquote,
-th,
-td,
-figure,
-figcaption,
-button,
-input,
-textarea,
+
 select {
   margin: 0;
   padding: 0;
@@ -76,4 +49,3 @@ body {
   text-align: center;
 }
 
-/* Add additional styles based on your project needs */

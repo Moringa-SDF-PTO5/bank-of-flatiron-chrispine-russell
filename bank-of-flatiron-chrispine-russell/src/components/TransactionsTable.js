@@ -3,8 +3,7 @@ import React, { useState } from 'react';
 const TransactionsTable = ({ transactions }) => {
   const [sortBy, setSortBy] = useState(null);
   const [filterBy, setFilterBy] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
+
 
   // Function to handle sorting
   const handleSort = (field) => {
@@ -54,7 +53,6 @@ const TransactionsTable = ({ transactions }) => {
             </tr>
           ) : error ? (
             <tr>
-              <td colSpan="3">Error: {error.message}</td>
             </tr>
           ) : sortedTransactions.map(transaction => (
             <tr key={transaction.id}>
@@ -69,4 +67,4 @@ const TransactionsTable = ({ transactions }) => {
   );
 }
 
-export default TransactionTable;
+export default TransactionsTable;

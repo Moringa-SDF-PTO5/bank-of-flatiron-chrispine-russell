@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TransactionsTable from './components/TransactionsTable';
 import TransactionForm from './components/TransactionForm';
-import SearchBar from './components/searchBar';
+import SearchrchBar from './components/searchBar';
 import './App.css'; // Importing the CSS file
 
 const App = () => {
@@ -53,7 +53,7 @@ const App = () => {
       <h1 className="app-heading">Bank of Flatiron</h1>
       <TransactionForm onAddTransaction={addTransaction} />
       <SearchBar onSearch={handleSearch} />
-      <TransactionTable transactions={filteredTransactions} />
+      <TransactionsTable transactions={filteredTransactions} />
     </div>
   );
 };

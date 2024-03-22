@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TransactionTable = ({ transactions }) => {
+const TransactionsTable = ({ transactions }) => {
   const [sortBy, setSortBy] = useState(null);
   const [filterBy, setFilterBy] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -17,8 +17,8 @@ const TransactionTable = ({ transactions }) => {
   };
 
   // Filter transactions based on search term
-  const filteredTransactions = transactions.filter(transaction =>
-    transaction.description.toLowerCase().includes(filterBy.toLowerCase())
+  const filteredTransactions = transactions.filter(transactions =>
+    transactions.description.toLowerCase().includes(filterBy.toLowerCase())
   );
 
   // Sort transactions based on selected field
@@ -29,7 +29,7 @@ const TransactionTable = ({ transactions }) => {
   }) : filteredTransactions;
 
   return (
-    <div className="transaction-table">
+    <div className="transactions-table">
       <h2>Transactions</h2>
       {/* Input for filtering */}
       <input
